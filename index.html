@@ -20,7 +20,6 @@
             text-transform: uppercase;
             letter-spacing: -0.02em;
         }
-        /* Style Néo-Brutaliste */
         .brutal-card {
             background: white;
             border: 4px solid black;
@@ -31,7 +30,6 @@
             transform: translate(-4px, -4px);
             box-shadow: 12px 12px 0px 0px var(--red-jc);
         }
-        /* Format A6 Paysage pour le conteneur d'image */
         .aspect-a6-landscape {
             aspect-ratio: 148 / 105;
             overflow: hidden;
@@ -57,10 +55,10 @@
     <header class="bg-red-jc text-white py-16 px-6 border-b-8 border-black">
         <div class="max-w-6xl mx-auto text-center">
             <h1 class="font-zine text-5xl md:text-8xl mb-4 leading-none italic">
-                L'AMOUR EN <br> ROUGE ET NOIR
+                JOYEUSE <br> SAINT VALENTIN
             </h1>
             <p class="text-lg md:text-2xl font-semibold max-w-3xl mx-auto mt-6 bg-black text-white p-4 inline-block">
-                Opération Saint-Valentin : Télécharge tes cartes postales militantes.
+                Télécharge tes cartes préferé.
             </p>
         </div>
     </header>
@@ -71,7 +69,7 @@
     </main>
 
     <section class="bg-gray-100 border-y-4 border-black py-16 px-6 text-center">
-        <h2 class="font-zine text-3xl mb-8">Fais tourner la lutte</h2>
+        <h2 class="font-zine text-3xl mb-8">Fais tourner</h2>
         <button onclick="shareSite()" class="brutal-btn-red px-10 py-5 flex items-center gap-3 text-xl mx-auto">
             <i data-lucide="share-2"></i> PARTAGER SUR WHATSAPP
         </button>
@@ -79,23 +77,24 @@
 
     <footer class="p-12">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <div class="text-center md:text-left">
-                <h3 class="font-zine text-3xl text-red-jc">MJCF 56</h3>
-                <p class="font-bold uppercase tracking-widest">Morbihan</p>
-            </div>
+            <a href="linktr.ee/mjcf56">
+                <div class="text-center md:text-left">
+                    <h3 class="font-zine text-3xl text-red-jc">MJCF 56</h3>
+                    <p class="font-bold uppercase tracking-widest">Morbihan</p>
+                </div>
+            </a>
             
             <div class="flex gap-8">
-                <a href="#" class="hover:scale-110 transition-transform"><i data-lucide="instagram" size="32"></i></a>
-                <a href="#" class="hover:scale-110 transition-transform"><i data-lucide="tiktok" size="32"></i></a>
-                <a href="#" class="hover:scale-110 transition-transform"><i data-lucide="twitter" size="32"></i></a>
+                <a href="https://instagram.com/mjcf_56" class="hover:scale-110 transition-transform"><i data-lucide="instagram" size="32"></i></a>
+                <a href="https://tiktok.com/@mjcf_56" class="hover:scale-110 transition-transform"><i data-lucide="tiktok" size="32"></i></a>
+                <a href="https://x.com/MjcfMorbihan" class="hover:scale-110 transition-transform"><i data-lucide="twitter" size="32"></i></a>
             </div>
 
-            <a href="#" class="brutal-btn-red px-8 py-4">ADHÉRER AU MJCF</a>
+            <a href="https://www.jeunes-communistes.fr/adhesion" class="brutal-btn-red px-8 py-4">ADHÉRER AU MJCF</a>
         </div>
     </footer>
 
     <script>
-        // Données des 10 cartes
         const cardsData = [
             { 
                 title: "Syndicat", 
