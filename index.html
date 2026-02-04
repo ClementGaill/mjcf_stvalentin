@@ -97,16 +97,16 @@
     <script>
         // Données des 10 cartes
         const cardsData = [
-            { title: "Coup de foudre pour la lutte", img: "https://placehold.co/1480x1050/E93F3F/white?text=A6+PAYSAGE+1" },
-            { title: "Mon cœur bat à gauche", img: "https://placehold.co/1480x1050/E93F3F/white?text=A6+PAYSAGE+2" },
-            { title: "Nationalisons ton cœur", img: "https://placehold.co/1480x1050/E93F3F/white?text=A6+PAYSAGE+3" },
-            { title: "L'amour sans frontières", img: "https://placehold.co/1480x1050/E93F3F/white?text=A6+PAYSAGE+4" },
-            { title: "Pas de roses, des droits", img: "https://placehold.co/1480x1050/E93F3F/white?text=A6+PAYSAGE+5" },
-            { title: "Grève générale des bisous", img: "https://placehold.co/1480x1050/E93F3F/white?text=A6+PAYSAGE+6" },
-            { title: "Capitalisme briseur de cœurs", img: "https://placehold.co/1480x1050/E93F3F/white?text=A6+PAYSAGE+7" },
-            { title: "Union Ouvrière & Sentimentale", img: "https://placehold.co/1480x1050/E93F3F/white?text=A6+PAYSAGE+8" },
-            { title: "Contre le RN, l'amour toujours", img: "https://placehold.co/1480x1050/E93F3F/white?text=A6+PAYSAGE+9" },
-            { title: "Service Public, Mon Amour", img: "https://placehold.co/1480x1050/E93F3F/white?text=A6+PAYSAGE+10" }
+            { 
+                title: "Coup de foudre pour la lutte", 
+                img: "images/Carte1.png",
+                pdf: "pdf/Carte1.pdf"
+            },
+            { 
+                title: "Mon cœur bat à gauche", 
+                img: "images/carte2.png", 
+                pdf: "pdf/carte2.pdf" 
+            },
         ];
 
         const grid = document.getElementById('cards-grid');
@@ -125,8 +125,8 @@
                         <a href="${card.img}" download class="brutal-btn-red text-center py-2 text-sm flex items-center justify-center gap-2">
                             <i data-lucide="image" size="16"></i> PNG
                         </a>
-                        <a href="#" class="border-2 border-black font-bold text-center py-2 text-sm hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-2">
-                            <i data-lucide="printer" size="16"></i> PDF
+                        <a href="${card.pdf}" target="_blank" class="border-2 border-black font-bold text-center py-2 text-sm hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-2">
+                            <i data-lucide="printer" size="16"></i> PDF (PRINT)
                         </a>
                     </div>
                 </div>
