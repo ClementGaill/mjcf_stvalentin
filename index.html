@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,49 +8,62 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800;900&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="https://cloud.umami.is/script.js"
+        data-website-id="1e4e405f-872a-4e03-acab-5d785476ab0e"></script>
     <style>
         :root {
             --red-jc: #E93F3F;
         }
+
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #ffffff;
         }
+
         .font-zine {
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: -0.02em;
         }
+
         .brutal-card {
             background: white;
             border: 4px solid black;
-            box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+            box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
             transition: all 0.2s ease;
         }
+
         .brutal-card:hover {
             transform: translate(-4px, -4px);
             box-shadow: 12px 12px 0px 0px var(--red-jc);
         }
+
         .aspect-a6-landscape {
             aspect-ratio: 148 / 105;
             overflow: hidden;
             border-bottom: 4px solid black;
         }
+
         .brutal-btn-red {
             background: var(--red-jc);
             border: 3px solid black;
-            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
             color: white;
             font-weight: 800;
             transition: all 0.1s;
         }
+
         .brutal-btn-red:active {
             transform: translate(2px, 2px);
-            box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+            box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
         }
-        .bg-red-jc { background-color: var(--red-jc); }
+
+        .bg-red-jc {
+            background-color: var(--red-jc);
+        }
     </style>
 </head>
+
 <body class="text-black">
 
     <header class="bg-red-jc text-white py-16 px-6 border-b-8 border-black">
@@ -65,166 +79,83 @@
 
     <main class="max-w-7xl mx-auto px-6 py-16">
         <div id="cards-grid" class="grid grid-cols-1 md:grid-cols-2 gap-10">
-            </div>
+        </div>
     </main>
 
     <section class="bg-gray-100 border-y-4 border-black py-16 px-6 text-center">
         <h2 class="font-zine text-3xl mb-8">FAIRE CIRCULER LES MOYENS DE SÉDUCTION</h2>
-        <button onclick="shareSite()" class="brutal-btn-red px-10 py-5 flex items-center gap-3 text-xl mx-auto">
+
+        <button onclick="shareSite()" class="brutal-btn-red px-10 py-5 flex items-center gap-3 text-xl mx-auto"
+            data-umami-event="Partage WhatsApp">
             <i data-lucide="share-2"></i> PARTAGER SUR WHATSAPP
         </button>
     </section>
 
     <footer class="p-12">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-            <a href="linktr.ee/mjcf56">
+            <a href="linktr.ee/mjcf56" data-umami-event="Clic Linktree Footer">
                 <div class="text-center md:text-left">
                     <h3 class="font-zine text-3xl text-red-jc">MJCF 56</h3>
                     <p class="font-bold uppercase tracking-widest">Morbihan</p>
                 </div>
             </a>
-            
+
             <div class="flex gap-8">
-                <a href="https://instagram.com/mjcf_56" class="hover:scale-110 transition-transform"><i data-lucide="instagram" size="32"></i></a>
-                <a href="https://tiktok.com/@mjcf_56" class="hover:scale-110 transition-transform"><i data-lucide="tiktok" size="32"></i></a>
-                <a href="https://x.com/MjcfMorbihan" class="hover:scale-110 transition-transform"><i data-lucide="twitter" size="32"></i></a>
+                <a href="https://instagram.com/mjcf_56" class="hover:scale-110 transition-transform"
+                    data-umami-event="Social Instagram">
+                    <i data-lucide="instagram" size="32"></i>
+                </a>
+                <a href="https://tiktok.com/@mjcf_56" class="hover:scale-110 transition-transform"
+                    data-umami-event="Social TikTok">
+                    <i data-lucide="tiktok" size="32"></i>
+                </a>
+                <a href="https://x.com/MjcfMorbihan" class="hover:scale-110 transition-transform"
+                    data-umami-event="Social Twitter">
+                    <i data-lucide="twitter" size="32"></i>
+                </a>
             </div>
 
-            <a href="https://www.jeunes-communistes.fr/adhesion" class="brutal-btn-red px-8 py-4">ADHÉRER AU MJCF</a>
+            <a href="https://www.jeunes-communistes.fr/adhesion" class="brutal-btn-red px-8 py-4"
+                data-umami-event="Clic Adhésion">
+                ADHÉRER AU MJCF
+            </a>
         </div>
     </footer>
 
     <script>
         const cardsData = [
-            { 
-                title: "Syndicat", 
-                img: "images/Carte1.png",
-                pdf: "pdf/Carte1.pdf"
-            },
-            { 
-                title: "Marine Le Pen", 
-                img: "images/Carte2.png", 
-                pdf: "pdf/Carte2.pdf" 
-            },
-            { 
-                title: "Lénine", 
-                img: "images/Carte3.png", 
-                pdf: "pdf/Carte3.pdf" 
-            },
-            { 
-                title: "Red flags", 
-                img: "images/Carte4.png", 
-                pdf: "pdf/Carte4.pdf" 
-            },
-            { 
-                title: "Sarkozy", 
-                img: "images/Carte5.png", 
-                pdf: "pdf/Carte5.pdf" 
-            },
-            { 
-                title: "Karl Marx", 
-                img: "images/Carte6.png", 
-                pdf: "pdf/Carte6.pdf" 
-            },
-            { 
-                title: "Fabien Gay", 
-                img: "images/Carte7.png", 
-                pdf: "pdf/Carte7.pdf" 
-            },
-            { 
-                title: "Assan Lakehoul", 
-                img: "images/Carte8.png", 
-                pdf: "pdf/Carte8.pdf" 
-            },
-            { 
-                title: "Fabien Roussel", 
-                img: "images/Carte9.png", 
-                pdf: "pdf/Carte9.pdf" 
-            },
-            { 
-                title: "Macron", 
-                img: "images/Carte10.png", 
-                pdf: "pdf/Carte10.pdf" 
-            },
-            { 
-                title: "Léon Deffontaines", 
-                img: "images/Carte11.png", 
-                pdf: "pdf/Carte11.pdf" 
-            },
-            { 
-                title: "PS = traitres", 
-                img: "images/Carte12.png", 
-                pdf: "pdf/Carte12.pdf" 
-            },
-            { 
-                title: "Nucléaire", 
-                img: "images/Carte13.png", 
-                pdf: "pdf/Carte13.pdf" 
-            },
-            { 
-                title: "Elon Musk", 
-                img: "images/Carte14.png", 
-                pdf: "pdf/Carte15.pdf" 
-            },
-            { 
-                title: "George Marchais", 
-                img: "images/Carte16.png", 
-                pdf: "pdf/Carte16.pdf" 
-            },
-            { 
-                title: "Prix de l'énergie", 
-                img: "images/Carte17.png", 
-                pdf: "pdf/Carte17.pdf" 
-            },
-            { 
-                title: "MEDEF", 
-                img: "images/Carte18.png", 
-                pdf: "pdf/Carte18.pdf" 
-            },
-            { 
-                title: "Rachida Dati", 
-                img: "images/Carte19.png", 
-                pdf: "pdf/Carte19.pdf" 
-            },
-            
-            { 
-                title: "Parcoursup", 
-                img: "images/Carte20.png", 
-                pdf: "pdf/Carte20.pdf" 
-            },
-            { 
-                title: "Jordan Bardella", 
-                img: "images/Carte21.png", 
-                pdf: "pdf/Carte21.pdf" 
-            },
-            { 
-                title: "Sarkozy v2", 
-                img: "images/Carte22.png", 
-                pdf: "pdf/Carte22.pdf" 
-            },
-            { 
-                title: "Mon cœur bat à gauche", 
-                img: "images/Carte23.png", 
-                pdf: "pdf/Carte23.pdf" 
-            },
-            { 
-                title: "Elisabeth Borne", 
-                img: "images/Carte24.png", 
-                pdf: "pdf/Carte24.pdf" 
-            },
-            { 
-                title: "Bayrou", 
-                img: "images/Carte25.png", 
-                pdf: "pdf/Carte25.pdf" 
-            },
+            { title: "Syndicat", img: "images/Carte1.png", pdf: "pdf/Carte1.pdf" },
+            { title: "Marine Le Pen", img: "images/Carte2.png", pdf: "pdf/Carte2.pdf" },
+            { title: "Lénine", img: "images/Carte3.png", pdf: "pdf/Carte3.pdf" },
+            { title: "Red flags", img: "images/Carte4.png", pdf: "pdf/Carte4.pdf" },
+            { title: "Sarkozy", img: "images/Carte5.png", pdf: "pdf/Carte5.pdf" },
+            { title: "Karl Marx", img: "images/Carte6.png", pdf: "pdf/Carte6.pdf" },
+            { title: "Fabien Gay", img: "images/Carte7.png", pdf: "pdf/Carte7.pdf" },
+            { title: "Assan Lakehoul", img: "images/Carte8.png", pdf: "pdf/Carte8.pdf" },
+            { title: "Fabien Roussel", img: "images/Carte9.png", pdf: "pdf/Carte9.pdf" },
+            { title: "Macron", img: "images/Carte10.png", pdf: "pdf/Carte10.pdf" },
+            { title: "Léon Deffontaines", img: "images/Carte11.png", pdf: "pdf/Carte11.pdf" },
+            { title: "PS = traitres", img: "images/Carte12.png", pdf: "pdf/Carte12.pdf" },
+            { title: "Nucléaire", img: "images/Carte13.png", pdf: "pdf/Carte13.pdf" },
+            { title: "Elon Musk", img: "images/Carte14.png", pdf: "pdf/Carte15.pdf" },
+            { title: "George Marchais", img: "images/Carte16.png", pdf: "pdf/Carte16.pdf" },
+            { title: "Prix de l'énergie", img: "images/Carte17.png", pdf: "pdf/Carte17.pdf" },
+            { title: "MEDEF", img: "images/Carte18.png", pdf: "pdf/Carte18.pdf" },
+            { title: "Rachida Dati", img: "images/Carte19.png", pdf: "pdf/Carte19.pdf" },
+            { title: "Parcoursup", img: "images/Carte20.png", pdf: "pdf/Carte20.pdf" },
+            { title: "Jordan Bardella", img: "images/Carte21.png", pdf: "pdf/Carte21.pdf" },
+            { title: "Sarkozy v2", img: "images/Carte22.png", pdf: "pdf/Carte22.pdf" },
+            { title: "Mon cœur bat à gauche", img: "images/Carte23.png", pdf: "pdf/Carte23.pdf" },
+            { title: "Elisabeth Borne", img: "images/Carte24.png", pdf: "pdf/Carte24.pdf" },
+            { title: "Bayrou", img: "images/Carte25.png", pdf: "pdf/Carte25.pdf" },
         ];
 
         const grid = document.getElementById('cards-grid');
-        
+
         cardsData.forEach((card, index) => {
             const cardEl = document.createElement('div');
             cardEl.className = 'brutal-card flex flex-col bg-white';
-            
+
             cardEl.innerHTML = `
                 <div class="aspect-a6-landscape bg-gray-200">
                     <img src="${card.img}" alt="${card.title}" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
@@ -232,12 +163,21 @@
                 <div class="p-6">
                     <h3 class="font-zine text-xl mb-6">${card.title}</h3>
                     <div class="grid grid-cols-2 gap-4">
-                        <a href="${card.img}" download class="brutal-btn-red text-center py-2 text-sm flex items-center justify-center gap-2">
+                        
+                        <a href="${card.img}" download 
+                           class="brutal-btn-red text-center py-2 text-sm flex items-center justify-center gap-2"
+                           data-umami-event="Téléchargement PNG"
+                           data-umami-event-carte="${card.title}">
                             <i data-lucide="image" size="16"></i> PNG
                         </a>
-                        <a href="${card.pdf}" target="_blank" class="border-2 border-black font-bold text-center py-2 text-sm hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-2">
+
+                        <a href="${card.pdf}" target="_blank" 
+                           class="border-2 border-black font-bold text-center py-2 text-sm hover:bg-black hover:text-white transition-colors flex items-center justify-center gap-2"
+                           data-umami-event="Téléchargement PDF"
+                           data-umami-event-carte="${card.title}">
                             <i data-lucide="printer" size="16"></i> PDF (PRINT)
                         </a>
+
                     </div>
                 </div>
             `;
@@ -252,4 +192,5 @@
         }
     </script>
 </body>
+
 </html>
